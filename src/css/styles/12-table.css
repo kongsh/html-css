@@ -1,0 +1,66 @@
+@import "./../../common/mordern-reset.css";
+
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 50px;
+}
+
+.table-wrapper {
+  height: 625px;
+  block-size: 625px;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.table-styling {
+  table-layout: fixed;
+  border: 1px solid currentColor;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  inline-size: 100%;
+
+  .number {
+    width: 10%;
+    inline-size: 10%;
+  }
+
+  .name {
+    width: 20%;
+    inline-size: 20%;
+  }
+
+  .email {
+    width: 40%;
+    inline-size: 40%;
+  }
+
+  .phone {
+    width: 30%;
+    inline-size: 30%;
+  }
+
+  th {
+    background-color: sandybrown;
+  }
+
+  thead,
+  th,
+  td {
+    border: 1px solid currentColor;
+    padding: 1em;
+  }
+
+  thead {
+    position: sticky;
+    inset-block-start: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: silver;
+  }
+
+  tbody tr {
+    scroll-snap-align: start;
+  }
+}
