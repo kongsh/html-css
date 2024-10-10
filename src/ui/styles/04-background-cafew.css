@@ -1,0 +1,98 @@
+@import "./../../common/best-reset.css";
+@import "./../../common/a11y.css";
+@import "./../../common/base.css";
+
+.coffee-lab {
+  width: 1440px;
+  inline-size: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: auto;
+
+  .coffee-lab__headline {
+    text-align: center;
+
+    h2 {
+      font-weight: 100;
+      font-size: 46px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 70px;
+      inline-size: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-inline: auto;
+      margin-top: 55px;
+      margin-bottom: 55px;
+      margin-block: 55px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+
+  .coffee-lab__list {
+    --size: 392px;
+
+    list-style: "";
+    padding-block-end: 100px;
+    padding-inline-start: 100px;
+    inline-size: cale(var(--size) * 2);
+    text-align: center;
+    font-size: 0;
+    padding-inline-start: 100px;
+
+    .coffee-lab__item {
+      display: inline-block;
+      inline-size: var(--size);
+      block-size: var(--size);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+    }
+
+    a {
+      display: inline-block;
+      padding-block-start: 300px;
+      font-size: 32px;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 3.2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      &::after {
+        content: "";
+        display: block;
+        background-color: white;
+        height: 10px;
+        block-size: 10px;
+      }
+    }
+
+    .coffee-lab__item:first-child {
+      background-image: url("./../../assets/cafew/coffee-lab-01-@2x.jpg");
+      z-index: 1;
+    }
+    .coffee-lab__item:last-child {
+      background-image: url("./../../assets/cafew/coffee-lab-02-@2x.jpg");
+      inset-block-start: 100px;
+      inset-inline-start: -100px;
+    }
+  }
+}
