@@ -2,3 +2,10 @@
 body {
   font-family: "Pretendard Variable", Pretendard, sans-serif;
 }
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
