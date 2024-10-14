@@ -30,9 +30,9 @@
   box-sizing: border-box;
 }
 
-/* 임시 스타일 */
+/* 기본 스타일 */
 body {
-  margin: 50px;
+  color: var(--black);
 }
 
 /* 로고 컴포넌트 */
@@ -119,6 +119,10 @@ body {
     &:user-invalid + .input__error-message span {
       visibility: visible;
     }
+
+    &focus {
+      border: 1px solid var(--green);
+    }
   }
 
   .input__error-message {
@@ -169,4 +173,7 @@ body {
 .button--primary {
   background-color: var(--green);
   color: var(--white);
+  block-size: 3.5rem;
+  padding: 1rem;
+  border: 0;
 }
