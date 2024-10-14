@@ -9,7 +9,7 @@
     <link rel="preload" as="style" href="./../assets/font/pretendard/pretendardvariable-dynamic-subset.css" />
     <link rel="stylesheet" href="./../assets/font/pretendard/pretendardvariable-dynamic-subset.css" />
 
-    <link rel="stylesheet" href="./styles/07-form-login.css" />
+    <link rel="stylesheet" href="./styles/07-form-component.css" />
   </head>
   <body>
     <!-- 로고 컴포넌트 -->
@@ -55,7 +55,7 @@
     <!-- 입력 서식 컴포넌트 (input) : 숨김 레이블 유형 -->
     <div class="input" role="group">
       <label class="input__label sr-only" for="input-1">레이블</label>
-      <input class="input__input" type="email" name="input-1" id="input-1" placeholder="플레이스 홀더 텍스트" required aria-describedby="error-message-1" />
+      <input class="input__input" type="email" id="input-1" required placeholder="플레이스 홀더 텍스트" aria-errormessage="error-message-1" />
       <p class="input__error-message" role="alert" id="error-message-1" aria-live="polite">
         <span>에러 메시지를 입력해 주세요.</span>
       </p>
@@ -63,10 +63,13 @@
 
     <!-- 스위치 컴포넌트 (checkbox) -->
     <div class="switch" role="group">
-      <input class="switch__input" type="checkbox" name="" id="switch-1" />
+      <input class="switch__input" type="checkbox" name="switch-1" id="switch-1" />
       <label class="switch__label" for="switch-1">
         <span class="sr-only">IP 보안 스위치</span>
       </label>
     </div>
+
+    <!-- 버튼 컴포넌트 -->
+    <button type="button" class="button--primary">버튼</button>
   </body>
 </html>

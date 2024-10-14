@@ -8,6 +8,7 @@
   --gray: #999;
   --green: #03cf5d;
   --silver: #dadada;
+  --black: #121212;
 
   /* 아이콘 크기 */
   --size-sm: 0.75rem;
@@ -163,4 +164,9 @@ body {
     content: "ON";
     color: #03cf5d;
   }
+}
+
+.button--primary {
+  background-color: var(--green);
+  color: var(--white);
 }
