@@ -1,11 +1,18 @@
 /* 기본 스타일 */
-body {
-  font-family: "Pretendard Variable", Pretendard, sans-serif;
-}
-
 input,
 button,
 select,
 textarea {
   font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 50px;
 }

@@ -7,7 +7,11 @@
 }
 
 .masonry-layout {
-  columns: 4;
+  columns: 1;
+
+  @media (min-width: 640px) {
+    columns: 2;
+  }
 
   figure {
     margin: 2rem 0;
